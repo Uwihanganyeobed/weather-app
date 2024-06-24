@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const axios = require('axios');
 const config = require('../config');
-const translations = require('./translations');
+const translations = require('../translations');
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
