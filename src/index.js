@@ -9,7 +9,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 app.post('/ussd', async (req, res) => {
     const { sessionId, serviceCode, phoneNumber, text } = req.body;
     console.log(`Received request: ${JSON.stringify(req.body)}`);
