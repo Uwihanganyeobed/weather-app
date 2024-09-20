@@ -3,9 +3,6 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const config = require('../config');
 const translations = require('./translations');
-const mongoose = require('mongoose');
-
-mongoose.connect('mongodb+srv://uwihanganyeobed:<wsKNGrPiPEmKvFz0>@cluster0.p4fnh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 const app = express();
 app.use(cors());
