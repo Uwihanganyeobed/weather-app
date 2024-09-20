@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const axios = require('axios');
 const config = require('../config');
 const translations = require('./translations');
+const cors = require('cors');
 
 const app = express();
 app.use(cors());
